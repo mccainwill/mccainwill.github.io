@@ -1,0 +1,103 @@
+@import "clearfix";
+@import "fonts";
+
+/* General Styles */
+
+body{
+	padding:0; 
+	margin:0;
+}
+
+.wrapper{
+
+}
+
+/* Header Styles */
+
+header{
+
+	padding: 20px 0;
+	width: 100%;
+
+	h1{
+		font-family: 'Cardo', serif;
+		font-weight: 400;
+		text-align: center;
+		font-size:2em;
+		margin-top:0;
+
+		color: #000;
+	}
+
+	hr{
+		width:30%;
+	}
+
+	h2{
+		font-family: 'Cardo', serif;
+		font-weight: 400;
+		text-align: center;
+		font-size: .9em;
+
+		color:#555;
+	}
+
+	ul{
+		padding:0;
+		margin:0 auto;
+		text-align: center;
+		width: 90%;
+		font-family:'Josefin Sans', sans-serif;
+		font-weight: 400;
+		border-top: thick solid #DDD;
+		border-bottom:thick solid #DDD;
+    	border-radius: 10px;
+		display: flex;
+
+		li{
+			text-align: center;
+
+			a{
+				display: block;
+				padding:10px;
+				font-family: 'Josefin Sans', sans-serif;
+				font-weight: 400;
+				text-decoration: none;
+			}
+
+			
+		}
+	}
+}
+
+a.about:hover{
+	background: linear-gradient(#DDD,red);
+}
+
+a.work:hover{
+	background: linear-gradient(blue, white);
+}
+
+a.contact:hover{
+	background: linear-gradient(green, white);
+}
+
+main{
+	width:90%;
+	margin: 0 auto;
+}
+
+.portfolio_select{
+
+	.project{
+    	text-align: center;
+
+    	h1{
+    		font-family: 'Cardo', serif;
+    		font-weight: 400;
+    	}
+	}
+}
+
+@import "tablet";
+@import "desktop";

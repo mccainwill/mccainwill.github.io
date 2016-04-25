@@ -1,0 +1,22 @@
+@media screen and (min-width:700px){
+
+header{
+
+	ul{
+		border-bottom:none;
+
+		li{
+			width: 30%;
+			display: inline-block;
+			flex: 1;
+		}
+	}
+
+}
+
+	.project{
+		float: left;
+	   	width: 50%;
+	}
+
+}

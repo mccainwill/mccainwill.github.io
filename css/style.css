@@ -1,0 +1,88 @@
+/* CLEARFIX */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1;
+  /* ie 6/7 */ }
+
+@media screen and (min-width: 700px) {
+  header ul {
+    border-bottom: none; }
+    header ul li {
+      width: 30%;
+      display: inline-block;
+      flex: 1; }
+
+  .project {
+    float: left;
+    width: 50%; } }
+/* General Styles */
+body {
+  padding: 0;
+  margin: 0; }
+
+/* Header Styles */
+header {
+  padding: 20px 0;
+  width: 100%; }
+  header h1 {
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0;
+    color: #000; }
+  header hr {
+    width: 30%; }
+  header h2 {
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: .9em;
+    color: #DDD; }
+  header ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    border-top: thick solid #DDD;
+    border-bottom: thick solid #DDD;
+    border-radius: 10px;
+    display: flex; }
+    header ul li {
+      text-align: center; }
+      header ul li a {
+        display: block;
+        padding: 10px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        text-decoration: none; }
+
+a.about:hover {
+  background: linear-gradient(#DDD, red); }
+
+a.work:hover {
+  background: linear-gradient(blue, white); }
+
+a.contact:hover {
+  background: linear-gradient(green, white); }
+
+main {
+  width: 90%;
+  margin: 0 auto; }
+
+.portfolio_select .project {
+  text-align: center; }
+  .portfolio_select .project h1 {
+    font-family: 'Cardo', serif;
+    font-weight: 400; }
+
+/*# sourceMappingURL=style.css.map */
