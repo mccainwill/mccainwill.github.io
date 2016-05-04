@@ -11,17 +11,6 @@
   zoom: 1;
   /* ie 6/7 */ }
 
-@media screen and (min-width: 700px) {
-  header ul {
-    border-bottom: none; }
-    header ul li {
-      width: 30%;
-      display: inline-block;
-      flex: 1; }
-
-  .project {
-    float: left;
-    width: 50%; } }
 /* General Styles */
 body {
   padding: 0;
@@ -29,8 +18,9 @@ body {
 
 /* Header Styles */
 header {
-  padding: 20px 0;
-  width: 100%; }
+  padding: 20px 0 0 0;
+  margin: 0 auto;
+  background: linear-gradient(#CFD2E6, #FFF); }
   header h1 {
     font-family: 'Cardo', serif;
     font-weight: 400;
@@ -44,18 +34,18 @@ header {
     font-family: 'Cardo', serif;
     font-weight: 400;
     text-align: center;
-    font-size: .9em;
-    color: #DDD; }
+    font-size: 1em;
+    color: #607D8B; }
   header ul {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
-    width: 100%;
+    width: 90%;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
-    border-top: thick solid #DDD;
-    border-bottom: thick solid #DDD;
-    border-radius: 10px;
+    border-top: thick solid #AAA;
+    border-bottom: thick solid #AAA;
+    border-radius: 5px;
     display: flex; }
     header ul li {
       text-align: center; }
@@ -67,22 +57,176 @@ header {
         text-decoration: none; }
 
 a.about:hover {
-  background: linear-gradient(#DDD, red); }
+  background: #AAA;
+  color: #FFF;
+  transition: .4s ease; }
 
-a.work:hover {
-  background: linear-gradient(blue, white); }
+a.design:hover {
+  background: #AAA;
+  color: #FFF;
+  transition: .4s ease; }
 
-a.contact:hover {
-  background: linear-gradient(green, white); }
+a.frontend:hover {
+  background: #AAA;
+  color: #FFF;
+  transition: .4s ease; }
 
 main {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 103px; }
 
+/* Home */
+.intro {
+  font-family: 'Cardo', serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 2.5%;
+  padding: 10px;
+  display: block;
+  background: #FFF;
+  border: 1px solid #DDD; }
+  .intro h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px; }
+  .intro h2 {
+    font-size: 2em;
+    margin: 10px; }
+  .intro p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2em; }
+
+.intro_wrapper {
+  background-image: url(../img/sayagata.png);
+  width: 70%;
+  padding: 5px;
+  margin: 20px auto; }
+
+/* Portfolio */
 .portfolio_select .project {
-  text-align: center; }
-  .portfolio_select .project h1 {
+  text-align: center;
+  width: 45%;
+  float: left;
+  margin: 0 2.5%;
+  padding-bottom: 20px; }
+  .portfolio_select .project h2 {
     font-family: 'Cardo', serif;
     font-weight: 400; }
+  .portfolio_select .project ul {
+    list-style-type: none;
+    padding: 0; }
+  .portfolio_select .project li {
+    width: 100%; }
+    .portfolio_select .project li img {
+      height: 200px; }
+  .portfolio_select .project p {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-size: 1.1em; }
+
+/* Front End */
+.frontend .project {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Cardo";
+  font-weight: 400;
+  display: block;
+  margin-bottom: 20px; }
+  .frontend .project img {
+    height: 250px;
+    background: #D6D0D0; }
+  .frontend .project ul {
+    list-style-type: none;
+    padding: 0; }
+    .frontend .project ul li {
+      display: inline-block;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 400;
+      padding: 10px;
+      background: #CCC; }
+  .frontend .project .sitelink {
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    background: #767FB7;
+    color: #FFF;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 8px; }
+
+/* Case Study */
+.case_study section {
+  font-family: 'Cardo', serif;
+  font-weight: 400; }
+  .case_study section:nth-child(odd) {
+    background: linear-gradient(#FFF, #EEE, #FFF); }
+  .case_study section h2 {
+    text-align: center;
+    font-size: 2em;
+    border-radius: 50%;
+    color: #FFF;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #000;
+    background: #7A9BB7;
+    width: 40%;
+    margin: 0 auto; }
+  .case_study section p {
+    font-size: 1.2em;
+    text-align: center;
+    width: 50%;
+    margin: 20px auto; }
+.case_study .challenge ul {
+  padding: 0; }
+.case_study .challenge li {
+  text-align: center;
+  background: #7A9BB7;
+  width: 60%;
+  color: #FFF;
+  margin: 10px auto;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em; }
+.case_study .concepting ul {
+  padding: 0;
+  list-style-type: none; }
+  .case_study .concepting ul li {
+    width: 200px; }
+    .case_study .concepting ul li img {
+      width: 100%; }
+
+/* Footer */
+footer {
+  padding: 20px;
+  background: #EBE5D9;
+  border-top: 3px solid #AAA;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px; }
+  footer p {
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: center; }
+
+@media screen and (min-width: 700px) {
+  header ul li {
+    width: 30%;
+    display: inline-block;
+    flex: 1; }
+
+  .frontend .project {
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+    height: 550px; } }
 
 /*# sourceMappingURL=style.css.map */

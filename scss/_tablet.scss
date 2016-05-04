@@ -1,22 +1,26 @@
 @media screen and (min-width:700px){
 
-header{
+	header{
 
-	ul{
-		border-bottom:none;
+		ul{
 
-		li{
-			width: 30%;
-			display: inline-block;
-			flex: 1;
+			li{
+				width: 30%;
+				display: inline-block;
+				flex: 1;
+			}
 		}
+
 	}
 
-}
+	.frontend{
 
-	.project{
-		float: left;
-	   	width: 50%;
+		.project{
+			float: left;
+			width: 45%;
+			margin: 0 2.5%;
+			height:550px;
+		}
 	}
 
 }

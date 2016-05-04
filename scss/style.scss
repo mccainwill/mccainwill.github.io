@@ -16,8 +16,12 @@ body{
 
 header{
 
-	padding: 20px 0;
-	width: 100%;
+	padding: 20px 0 0 0;
+	// width: 90%;
+	margin: 0 auto;
+	background: linear-gradient(#CFD2E6, #FFF);
+	// background-image: url(../img/concrete.png);
+	// background-repeat: repeat-x;
 
 	h1{
 		font-family: 'Cardo', serif;
@@ -25,7 +29,6 @@ header{
 		text-align: center;
 		font-size:2em;
 		margin-top:0;
-
 		color: #000;
 	}
 
@@ -37,9 +40,8 @@ header{
 		font-family: 'Cardo', serif;
 		font-weight: 400;
 		text-align: center;
-		font-size: .9em;
-
-		color:#555;
+		font-size: 1em;
+		color:#607D8B;
 	}
 
 	ul{
@@ -49,9 +51,9 @@ header{
 		width: 90%;
 		font-family:'Josefin Sans', sans-serif;
 		font-weight: 400;
-		border-top: thick solid #DDD;
-		border-bottom:thick solid #DDD;
-    	border-radius: 10px;
+		border-top: thick solid #AAA;
+		border-bottom:thick solid #AAA;
+    	border-radius: 5px;
 		display: flex;
 
 		li{
@@ -71,31 +73,275 @@ header{
 }
 
 a.about:hover{
-	background: linear-gradient(#DDD,red);
+	// background: linear-gradient(#AAA, #B38585, #AAA);
+	background: #AAA;
+	color: #FFF;
+	transition: .4s ease;
 }
 
-a.work:hover{
-	background: linear-gradient(blue, white);
+a.design:hover{
+	// background: linear-gradient(#AAA, #8585B3, #AAA);
+	background: #AAA;
+	color: #FFF;
+	transition: .4s ease;
 }
 
-a.contact:hover{
-	background: linear-gradient(green, white);
+a.frontend:hover{
+	// background: linear-gradient(#AAA, #85B390, #AAA);
+	background: #AAA;
+	color: #FFF;
+	transition: .4s ease;
 }
 
 main{
 	width:90%;
 	margin: 0 auto;
+	padding-bottom: 103px;
 }
+
+/* Home */
+
+.intro{
+
+	font-family: 'Cardo', serif;
+	font-weight: 400;
+	text-align: center;
+	// width: 60%;
+	// margin: 30px auto;
+	margin: 2.5%;
+	padding: 10px;
+	display: block;
+	// background-image: url(../img/sayagata.png);
+	background: #FFF;
+	border: 1px solid #DDD;
+
+	h1{
+		text-align: center;
+		font-size: 2.5em;
+		margin: 10px;
+	}
+
+	h2{
+		font-size: 2em;
+		margin: 10px;
+	}
+
+	p{
+		width:80%;
+		margin: 0 auto;
+		font-size: 1.2em;
+	}
+}
+
+.intro_wrapper{
+	background-image: url(../img/sayagata.png);
+	width: 70%;
+	padding: 5px;
+	margin: 20px auto;
+}
+
+/* Portfolio */
 
 .portfolio_select{
 
+	// .intro{
+	// 	font-family: 'Cardo', serif;
+	// 	font-weight: 400;
+	// 	text-align: center;
+	// 	width: 60%;
+	// 	margin: 30px auto;
+	// 	padding: 10px;
+	// 	display: block;
+	// 	background: url(../img/sayagata.png);
+	// 	border: 1px solid #DDD;
+
+	// 	h1{
+	// 		text-align: center;
+	// 		font-size: 3em;
+	// 		margin: 10px;
+	// 	}
+
+	// 	p{
+	// 		width:80%;
+	// 		margin: 0 auto;
+	// 		font-size: 1.2em;
+	// 	}
+	// }
+
 	.project{
     	text-align: center;
+    	width: 45%;
+    	float: left;
+    	margin: 0 2.5%;
+    	padding-bottom: 20px;
 
-    	h1{
+    	h2{
     		font-family: 'Cardo', serif;
     		font-weight: 400;
     	}
+
+    	ul{
+    		list-style-type: none;
+    		padding:0;
+    	}
+
+    	li{
+    		width:100%;
+
+    		img{
+    			// width: 50%;
+    			height: 200px;
+    		}
+    	}
+
+    	p{
+    		font-family: "Cardo", serif;
+    		font-weight: 400;
+    		font-size: 1.1em;
+    	}
+	}
+}
+
+/* Front End */
+
+.frontend{
+
+	.project{
+
+		width: 60%;
+		text-align: center;
+		margin: 0 auto;
+		font-family: "Cardo";
+		font-weight: 400;
+		display: block;
+		margin-bottom: 20px;
+
+
+		img{
+			// width: 70%;
+			height: 250px;
+			// padding: 20px 40px;
+			background: #D6D0D0;
+		}
+
+		ul{
+			list-style-type: none;
+			padding:0;
+
+			li{
+				display: inline-block;
+				font-family: 'Josefin Sans', sans-serif;
+				font-weight: 400;
+				padding: 10px;
+				background: #CCC;
+			}
+		}
+
+		.sitelink {
+		    font-size: 1.4em;
+		    text-decoration: none;
+		    font-weight: 600;
+		    display: block;
+		    background: #767FB7;
+		    color: #FFF;
+		    width: 60%;
+		    margin: 0 auto;
+		    border-radius: 8px;
+		}
+	}
+}
+
+/* Case Study */
+
+.case_study{
+
+	section{
+
+		font-family: 'Cardo', serif;
+		font-weight: 400;
+
+		&:nth-child(odd){
+			background: linear-gradient(#FFF, #EEE, #FFF);
+		}
+
+		h2{
+			text-align: center;
+		    font-size: 2em;
+		    border-radius: 50%;
+		    color: #FFF;
+		    padding: 10px;
+		    text-shadow: 1px 1px 1px #000;
+		    background: #7A9BB7;
+		    width: 40%;
+		    margin: 0 auto;
+		}
+
+		p{
+			font-size: 1.2em;
+		    text-align: center;
+		    width: 50%;
+		    margin: 20px auto;
+		}	
+	}
+
+	.challenge{
+
+		ul{
+			padding:0;
+			
+		}
+
+		li{
+			text-align: center;
+		    background: #7A9BB7;
+		    width: 60%;
+		    color: #FFF;
+		    margin: 10px auto;
+		    padding: 10px;
+		    text-shadow: 1px 1px 1px #000;
+		    border-radius: 5px;
+		    font-family: 'Josefin Sans', sans-serif;
+		    font-weight: 400;
+		    font-size: 1.2em;
+		}
+	}
+
+	.concepting{
+
+		ul{
+			padding:0;
+			list-style-type: none;
+
+			li{
+				width:200px;
+
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+/* Footer */
+
+footer{
+	padding: 20px;
+	// background: url(../img/upfeathers.png);
+	background: #EBE5D9;
+	border-top: 3px solid #AAA;
+	position: fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height:60px;
+
+	p{
+		// float:right;
+		font-family: 'Cardo', serif;
+		font-weight: 400;
+		font-size: 1.2em;
+		text-align: center;
 	}
 }
 
