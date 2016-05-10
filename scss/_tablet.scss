@@ -3,14 +3,62 @@
 	header{
 
 		ul{
+			border-top: thick solid #AAA;
+			border-bottom:thick solid #AAA;
+			display: flex;
 
 			li{
 				width: 30%;
 				display: inline-block;
 				flex: 1;
+
+				a{
+					background: none;
+					color:#000;
+					margin: auto;
+					border: none;
+				}
 			}
 		}
 
+	}
+
+	main{
+		width: 90%;
+	}
+
+	.intro_wrapper{
+		width: 70%;
+	}
+
+	.case_study{
+
+		.concepting{
+			width: 90%;
+		}
+
+		.wireframes, .thumbnails, .mockups{
+			width: 30%;
+			margin: 0 1.5%;
+			flex:1;
+			border-bottom: none;
+			height: auto;
+		}
+
+		.details{
+
+			a{
+				width: 15%;
+			}
+		}
+
+		.writeups{
+			width: 70%;
+		}
+	}
+
+	.slideshow{
+		display: flex;
 	}
 
 	.frontend{
@@ -19,8 +67,14 @@
 			float: left;
 			width: 45%;
 			margin: 0 2.5%;
-			height:550px;
+			padding: 40px 0;
+			// height:550px;
 		}
+	}
+
+	footer{
+		height: 60px;
+		line-height: 60px;
 	}
 
 }

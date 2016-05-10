@@ -6,6 +6,8 @@
 body{
 	padding:0; 
 	margin:0;
+	position: relative; 
+	line-height: 1.6em;
 }
 
 .wrapper{
@@ -51,13 +53,14 @@ header{
 		width: 90%;
 		font-family:'Josefin Sans', sans-serif;
 		font-weight: 400;
-		border-top: thick solid #AAA;
-		border-bottom:thick solid #AAA;
+		// border-top: thick solid #AAA;
+		// border-bottom:thick solid #AAA;
     	border-radius: 5px;
-		display: flex;
+		// display: flex;
 
 		li{
 			text-align: center;
+			list-style-type: none;
 
 			a{
 				display: block;
@@ -65,8 +68,11 @@ header{
 				font-family: 'Josefin Sans', sans-serif;
 				font-weight: 400;
 				text-decoration: none;
+				background: #AAA;
+    			color: #FFF;
+    			margin: 10px 0;
+    			border: #504C41 2px solid;
 			}
-
 			
 		}
 	}
@@ -94,7 +100,7 @@ a.frontend:hover{
 }
 
 main{
-	width:90%;
+	// width:90%;
 	margin: 0 auto;
 	padding-bottom: 103px;
 }
@@ -117,25 +123,27 @@ main{
 
 	h1{
 		text-align: center;
-		font-size: 2.5em;
-		margin: 10px;
+		font-size: 2em;
+		margin: 20px;
 	}
 
 	h2{
 		font-size: 2em;
-		margin: 10px;
+		margin: 25px;
 	}
 
 	p{
-		width:80%;
-		margin: 0 auto;
+		width:90%;
+		margin: 10px auto;
 		font-size: 1.2em;
+		font-family: "Josefin Sans", sans-serif;
+		font-weight: 400;
 	}
 }
 
 .intro_wrapper{
 	background-image: url(../img/sayagata.png);
-	width: 70%;
+	width: 90%;
 	padding: 5px;
 	margin: 20px auto;
 }
@@ -195,9 +203,13 @@ main{
     	}
 
     	p{
-    		font-family: "Cardo", serif;
+    		font-family: "Josefin Sans", sans-serif;
     		font-weight: 400;
-    		font-size: 1.1em;
+    		font-size: 1.2em;
+    	}
+
+    	.projectpic img{
+    		height: 200px;
     	}
 	}
 }
@@ -216,17 +228,29 @@ main{
 		display: block;
 		margin-bottom: 20px;
 
+		p{
+			font-size: 1.2em;
+		}
+
+		p, span{
+			font-family: "Josefin Sans", sans-serif;
+			font-weight: 400;
+		}
+
 
 		img{
 			// width: 70%;
 			height: 250px;
 			// padding: 20px 40px;
 			background: #D6D0D0;
+			width: 100%;
+			max-width: 300px;
 		}
 
 		ul{
 			list-style-type: none;
 			padding:0;
+			margin-top:0;
 
 			li{
 				display: inline-block;
@@ -234,21 +258,26 @@ main{
 				font-weight: 400;
 				padding: 10px;
 				background: #CCC;
+				margin-bottom: 5px;
 			}
 		}
 
-		.sitelink {
-		    font-size: 1.4em;
-		    text-decoration: none;
-		    font-weight: 600;
-		    display: block;
-		    background: #767FB7;
-		    color: #FFF;
-		    width: 60%;
-		    margin: 0 auto;
-		    border-radius: 8px;
-		}
+		
 	}
+}
+
+.sitelink {
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    // background: #767FB7;
+    background: #7A9BB7;
+    color: #FFF;
+    width: 60%;
+    margin: 30px auto;
+    border-radius: 8px;
+    padding: 5px;
 }
 
 /* Case Study */
@@ -257,63 +286,73 @@ main{
 
 	section{
 
-		font-family: 'Cardo', serif;
+		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 400;
+		margin-bottom: 40px;
 
 		&:nth-child(odd){
-			background: linear-gradient(#FFF, #EEE, #FFF);
+			// background: linear-gradient(#FFF, #EEE, #FFF);
 		}
 
 		h2{
+			font-family: 'Cardo', serif;
+			font-weight: 400;
 			text-align: center;
 		    font-size: 2em;
-		    border-radius: 50%;
-		    color: #FFF;
+		    color: #000;
 		    padding: 10px;
-		    text-shadow: 1px 1px 1px #000;
-		    background: #7A9BB7;
-		    width: 40%;
+		    text-shadow: 1px 1px 1px #888686;
+		    width: 60%;
 		    margin: 0 auto;
 		}
 
 		p{
 			font-size: 1.2em;
-		    text-align: center;
-		    width: 50%;
+		    // text-align: center;
+		    // width: 70%;
 		    margin: 20px auto;
 		}	
+
+		hr{
+			margin: 30px 0;
+		}
 	}
 
 	.challenge{
+		// width: 70%;
+		margin: 0 auto;
 
-		ul{
+		ol{
 			padding:0;
-			
+			margin: 0;
 		}
 
 		li{
-			text-align: center;
-		    background: #7A9BB7;
+			// text-align: center;
+		    // background: #7A9BB7;
 		    width: 60%;
-		    color: #FFF;
+		    color: #000;
 		    margin: 10px auto;
 		    padding: 10px;
-		    text-shadow: 1px 1px 1px #000;
+		    // text-shadow: 1px 1px 1px #000;
 		    border-radius: 5px;
 		    font-family: 'Josefin Sans', sans-serif;
-		    font-weight: 400;
+		    font-weight: 600;
 		    font-size: 1.2em;
 		}
 	}
 
 	.concepting{
+		margin-top:30px;
+		// width: 70%;
+		margin: 0 auto;
 
 		ul{
 			padding:0;
 			list-style-type: none;
 
 			li{
-				width:200px;
+				// width:200px;
 
 				img{
 					width: 100%;
@@ -321,6 +360,155 @@ main{
 			}
 		}
 	}
+
+	.slide_wrapper{
+		// background: linear-gradient(#FFF, #EEE, #FFF);
+		background: #EEE;
+		border: #AAA solid 2px;
+		margin: 0 auto;
+	}
+
+	.controls{
+		text-align: center;
+	}
+
+	.prev{
+		float: left;
+	}
+
+	.next{
+		float: right;
+	}
+
+	.wireframes, .thumbnails, .mockups{
+		width: 80%;
+    	height: 200px;
+    	margin: 10px auto;
+    	overflow: hidden;
+    	border-bottom: 3px solid #000;
+	
+    	p{
+    		text-align: center;
+    	}
+
+    	ul{
+    		padding: 0;
+    		margin: 0;
+    		list-style-type: none;
+    		position: relative;
+    		// width: 600%;
+    		// height: 360px;
+    	
+    		li{
+    			position: absolute;
+    			left: 0;
+    			top: 0;
+    			height: 100%;
+    			background: #EEE;
+    			// z-index: 8;
+    			display: block;
+    			// float: left;
+    			// width: 16.6%;
+    			opacity: 0;
+    			transition: .5s ease;
+    		}
+
+    		.active{
+    			z-index: 10;
+    			opacity: 1;
+    			transition: .5s ease;
+    			position: relative;
+    		}
+
+    		.last-active{
+    			z-index: 9;
+    			opacity: 0;
+    			transition: .5s ease;
+    		}
+    	}
+	}
+
+	.details{
+		position: relative;
+		display: block;
+		width: 100%;
+		margin: 30px 0;
+
+		a{
+			display: block;
+			margin-top: 70px;
+			width: 15%;
+
+			img{
+				width: 80%;
+			}
+		}
+
+		h3{
+			position: absolute;
+    		background: #7A9BB7;
+    		padding: 10px;
+    		top: 0;
+    		width: 20%;
+    		margin: 0 40%;
+    		color: #FFF;
+    		border-radius: 4px;
+    		text-align: center;
+    		opacity: 0;
+    	}
+
+    	p{
+    		// position: absolute;
+    		background: #EEE;
+    		width: 100%;
+    		margin: 50px auto;
+    		// height: 55px;
+    		opacity: 0;
+    		display: none;
+    		float: left;
+    	}
+
+    	.active{
+    		z-index: 10;
+    		opacity: 1;
+    		display: block;
+    		transition: .5s ease;
+    	}
+
+    	.last-active{
+    		z-index: 9;
+    		opacity: 0;
+    		transition: .5s ease;
+    	}
+	}
+
+	.writeups{
+		position: relative;
+		float: left;
+    	width: 70%;
+    	display: block;
+    	padding-top: 20px;
+	}
+
+	.markup{
+		// width: 70%;
+		margin: 0 auto;
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.finished{
+		// width: 70%;
+		margin: 40px auto;
+		text-align: center;
+	}
+
+	.challenge, .concepting, .markup, .finished{
+		width: 90%;
+	}
+
 }
 
 /* Footer */
@@ -334,7 +522,9 @@ footer{
 	bottom:0;
 	left:0;
 	right:0;
-	height:60px;
+	height: 40px;
+	line-height: 40px;
+	z-index: 10;
 
 	p{
 		// float:right;
@@ -342,6 +532,7 @@ footer{
 		font-weight: 400;
 		font-size: 1.2em;
 		text-align: center;
+		margin:0;
 	}
 }
 

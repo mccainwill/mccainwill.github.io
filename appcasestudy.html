@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width" />
 
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,700|Cardo' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="node_modules/lightbox2/dist/css/lightbox.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<title>Will McCain - Case Study</title>
@@ -55,54 +56,103 @@
 				<li>Simulate a fight using Marvel's ability ratings and battle logic.</li>
 			</ol>
 
-			<p></p>
+			<p>The development team began to construct a framework with Backbone.js and Node.js while the other designer and myself began the process of developing our visual identity.</p>
+
+			<hr/>
 
 		</section>
 
-		<section class="concepting">
+		<section class="concepting clearfix">
 		
 			<h2>Concepting & Design</h2>
 
-			<p></p>
+			<p>It would be an app about superheroes, so the design didn't just embrace that, it REVELED in it. Bright, flat colors. Bold text. Large images to capture the eye. The last thing it would be was boring.</p>
 
-			<div class="wireframes">
-				<ul>
-					<li><img src="img/BattleApp_Main.jpg"></li>
-					<li><img src="img/BattleApp_Search.jpg"></li>
-					<li><img src="img/BattleApp_Bio.jpg"></li>
-					<li><img src="img/BattleApp_Matchup.jpg"></li>
-					<li><img src="img/BattleApp_Stat.jpg"></li>
-					<li><img src="img/BattleApp_Turn.jpg"></li>
-				</ul>
+			<div class="slide_wrapper clearfix">
+
+				
+
+				<div class="slideshow clearfix">
+					<div class="wireframes">
+						<p>Wireframes</p>
+						<ul class="one">
+							<li class="active"><a href="img/BattleApp_Main.jpg" data-lightbox="wireframes" data-title="Main page wireframe"><img src="img/BattleApp_Main.jpg"></a></li>
+							<li><a href="img/BattleApp_Search.jpg" data-lightbox="wireframes" data-title="Search page wireframe"><img src="img/BattleApp_Search.jpg"></a></li>
+							<li><a href="img/BattleApp_Bio.jpg" data-lightbox="wireframes" data-title="Bio page wireframe"><img src="img/BattleApp_Bio.jpg"></a></li>
+							<li><a href="img/BattleApp_Matchup.jpg" data-lightbox="wireframes" data-title="Matchup page wireframe"><img src="img/BattleApp_Matchup.jpg"></a></li>
+							<li><a href="img/BattleApp_Stat.jpg" data-lightbox="wireframes" data-title="Stat Battle wireframe"><img src="img/BattleApp_Stat.jpg"></a></li>
+							<li><a href="img/BattleApp_Turn.jpg" data-lightbox="wireframes" data-title="Turn Battle wireframe"><img src="img/BattleApp_Turn.jpg"></a></li>
+						</ul>
+					</div>
+
+					<div class="thumbnails">
+						<p>Thumbnails</p>
+						<ul class="one">
+							<li class="active"><a href="img/thumbnail_main.jpg" data-lightbox="thumbnails" data-title="Main page design sketch"><img src="img/thumbnail_main.jpg"></a></li>
+							<li><a href="img/thumbnail_search.jpg" data-lightbox="thumbnails" data-title="Search page sketch"><img src="img/thumbnail_search.jpg"></a></li>
+							<li><a href="img/thumbnail_bio.jpg" data-lightbox="thumbnails" data-title="Bio page sketch"><img src="img/thumbnail_bio.jpg"></a></li>
+							<li><a href="img/thumbnail_matchup.jpg" data-lightbox="thumbnails" data-title="Matchup page sketch"><img src="img/thumbnail_matchup.jpg"></a></li>
+							<li><a href="img/thumbnail_stat.jpg" data-lightbox="thumbnails" data-title="Stat battle sketch"><img src="img/thumbnail_stat.jpg"></a></li>
+							<li><a href="img/thumbnail_turn.jpg" data-lightbox="thumbnails" data-title="Turn battle sketch"><img src="img/thumbnail_turn.jpg"></a></li>
+						</ul>
+					</div>
+
+					<div class="mockups">
+						<p>Mockups</p>
+						<ul class="one">
+							<li class="active"><a href="img/sidewalkslam_main.jpg" data-lightbox="mockups"><img src="img/sidewalkslam_main.jpg"></a></li>
+							<li><a href="img/sidewalkslam_character.jpg" data-lightbox="mockups"><img src="img/sidewalkslam_character.jpg"></a></li>
+							<li><a href="img/sidewalkslam_bio.jpg" data-lightbox="mockups"><img src="img/sidewalkslam_bio.jpg"></a></li>
+							<li><a href="img/sidewalkslam_matchup.jpg" data-lightbox="mockups"><img src="img/sidewalkslam_matchup.jpg"></a></li>
+							<li><a href="img/sidewalkslam_stat.jpg" data-lightbox="mockups"><img src="img/sidewalkslam_stat.jpg"></a></li>
+							<li><a href="img/sidewalkslam_turn.jpg" data-lightbox="mockups"><img src="img/sidewalkslam_turn.jpg"></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="details clearfix">
+					<a class="prev" href="#" aria-label="Previous pages"><img src="img/thinarrow_left.png"/></a>
+
+					<h3 class="active">Main Page</h3>
+					<h3>Search Page</h3>
+					<h3>Character Page</h3>
+					<h3>Matchup Page</h3>
+					<h3>Stat Battle</h3>
+					<h3>Turn Battle</h3>
+
+					<div class="writeups">
+
+						<p class="active">The landing page had to make an impact, so we chose a big picture with in-your-face text. Initially we have calls to action over the image, but since they were mirrored in the buttons at the top, we went for a more intense welcome screen.</p>
+						<p>This page would be the central way of finding heroes, with the most frequently chosen characters as suggestions. It would also be the portal for viewing profiles.</p>
+						<p>The full API would be leveraged here for character picture, abilities, and a personal history. We remembered the old collectible cards in foil packs from the 90s and decided that would be a great way to present it. Plus, it would mesh well with our overall design.</p>
+						<p>Some users would want to go straight to the fight, and this is where they set it up. By clicking on an empty portrait, they could search for a character and add them. The areas for selecting characters was given the same excited style as the rest of the site, but also made to be reminiscent of fighting video games.</p>
+						<p>Finally! The fight is on! One of two types of fights, actually. The Stat Fight option runs a quick series of fights and records the victor. For those more interested in how a favorite hero might stand up  if they had enough chances. Visually, this and the next page are the central pieces of the app, so the background stretches to the full side of the screen to set it apart. The shadows beneath each character provided a hint of dimensionality, and there is very little on the page to distract from the main event.</p>
+						<p>Now this is probably what you had in mind! A single turn by turn battle with one victor and one chump. Each attack (or miss!) appears at the top of the message window so the user can keep their focus on the characters. </p>
+
+					</div>
+
+					<a class="next" href="#" aria-label="Next pages"><img src="img/thinarrow_right.png"></a>
+				</div>
+
 			</div>
 
-			<div class="thumbnails">
-				<ul>
-					<li></li>
-				</ul>
-			</div>
-
-			<div class="mockups">
-				<ul>
-					<li><img src="img/sidewalkslam_main.jpg"></li>
-					<li><img src="img/sidewalkslam_character.jpg"></li>
-					<li><img src="img/sidewalkslam_bio.jpg"></li>
-					<li><img src="img/sidewalkslam_matchup.jpg"></li>
-					<li><img src="img/sidewalkslam_stat.jpg"></li>
-					<li><img src="img/sidewalkslam_turn.jpg"></li>
-				</ul>
-			</div>
+			<hr/>
 
 		</section>
 
 		<section class="markup">
 
 			<h2>Markup</h2>
+
+			<p>The meat and potatoes of code to our spices of design. There was a lot of back and forth during this process. We designers built out templates for each page with HTML5 and CSS3 using SASS. The developers took those and fit them into their frameworks. Naturally, some things didn't work quite the same as we had built them, so we had to rework them around the app setup. Not too difficult, a little tedious, and immensely educational.</p>
+
+			<a href="img/battleapp.jpg" data-lightbox="Battleappcode" data-title="Site files in Sublime Text"><img src="img/battleapp.jpg" alt="BattleApp code windows"></a>
 			
 		</section>
 
 		<section class="finished">
-			
+			<p>Care to take it for a spin? By all means, be my guest:</p>
+			<a class="sitelink" href="">LIVE SITE</a>
 		</section>
 
 	</section>
@@ -115,6 +165,8 @@
 
 </div>
 
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

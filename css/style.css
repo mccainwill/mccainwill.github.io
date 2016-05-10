@@ -14,7 +14,9 @@
 /* General Styles */
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  position: relative;
+  line-height: 1.6em; }
 
 /* Header Styles */
 header {
@@ -43,18 +45,20 @@ header {
     width: 90%;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
-    border-top: thick solid #AAA;
-    border-bottom: thick solid #AAA;
-    border-radius: 5px;
-    display: flex; }
+    border-radius: 5px; }
     header ul li {
-      text-align: center; }
+      text-align: center;
+      list-style-type: none; }
       header ul li a {
         display: block;
         padding: 10px;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
-        text-decoration: none; }
+        text-decoration: none;
+        background: #AAA;
+        color: #FFF;
+        margin: 10px 0;
+        border: #504C41 2px solid; }
 
 a.about:hover {
   background: #AAA;
@@ -72,7 +76,6 @@ a.frontend:hover {
   transition: .4s ease; }
 
 main {
-  width: 90%;
   margin: 0 auto;
   padding-bottom: 103px; }
 
@@ -88,19 +91,21 @@ main {
   border: 1px solid #DDD; }
   .intro h1 {
     text-align: center;
-    font-size: 2.5em;
-    margin: 10px; }
+    font-size: 2em;
+    margin: 20px; }
   .intro h2 {
     font-size: 2em;
-    margin: 10px; }
+    margin: 25px; }
   .intro p {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1.2em; }
+    width: 90%;
+    margin: 10px auto;
+    font-size: 1.2em;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400; }
 
 .intro_wrapper {
   background-image: url(../img/sayagata.png);
-  width: 70%;
+  width: 90%;
   padding: 5px;
   margin: 20px auto; }
 
@@ -122,9 +127,11 @@ main {
     .portfolio_select .project li img {
       height: 200px; }
   .portfolio_select .project p {
-    font-family: "Cardo", serif;
+    font-family: "Josefin Sans", sans-serif;
     font-weight: 400;
-    font-size: 1.1em; }
+    font-size: 1.2em; }
+  .portfolio_select .project .projectpic img {
+    height: 200px; }
 
 /* Front End */
 .frontend .project {
@@ -135,71 +142,176 @@ main {
   font-weight: 400;
   display: block;
   margin-bottom: 20px; }
+  .frontend .project p {
+    font-size: 1.2em; }
+  .frontend .project p, .frontend .project span {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400; }
   .frontend .project img {
     height: 250px;
-    background: #D6D0D0; }
+    background: #D6D0D0;
+    width: 100%;
+    max-width: 300px; }
   .frontend .project ul {
     list-style-type: none;
-    padding: 0; }
+    padding: 0;
+    margin-top: 0; }
     .frontend .project ul li {
       display: inline-block;
       font-family: 'Josefin Sans', sans-serif;
       font-weight: 400;
       padding: 10px;
-      background: #CCC; }
-  .frontend .project .sitelink {
-    font-size: 1.4em;
-    text-decoration: none;
-    font-weight: 600;
-    display: block;
-    background: #767FB7;
-    color: #FFF;
-    width: 60%;
-    margin: 0 auto;
-    border-radius: 8px; }
+      background: #CCC;
+      margin-bottom: 5px; }
+
+.sitelink {
+  font-size: 1.4em;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  background: #7A9BB7;
+  color: #FFF;
+  width: 60%;
+  margin: 30px auto;
+  border-radius: 8px;
+  padding: 5px; }
 
 /* Case Study */
 .case_study section {
-  font-family: 'Cardo', serif;
-  font-weight: 400; }
-  .case_study section:nth-child(odd) {
-    background: linear-gradient(#FFF, #EEE, #FFF); }
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px; }
   .case_study section h2 {
+    font-family: 'Cardo', serif;
+    font-weight: 400;
     text-align: center;
     font-size: 2em;
-    border-radius: 50%;
-    color: #FFF;
+    color: #000;
     padding: 10px;
-    text-shadow: 1px 1px 1px #000;
-    background: #7A9BB7;
-    width: 40%;
+    text-shadow: 1px 1px 1px #888686;
+    width: 60%;
     margin: 0 auto; }
   .case_study section p {
     font-size: 1.2em;
-    text-align: center;
-    width: 50%;
     margin: 20px auto; }
-.case_study .challenge ul {
-  padding: 0; }
-.case_study .challenge li {
-  text-align: center;
-  background: #7A9BB7;
-  width: 60%;
-  color: #FFF;
-  margin: 10px auto;
-  padding: 10px;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 5px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1.2em; }
-.case_study .concepting ul {
-  padding: 0;
-  list-style-type: none; }
-  .case_study .concepting ul li {
-    width: 200px; }
+  .case_study section hr {
+    margin: 30px 0; }
+.case_study .challenge {
+  margin: 0 auto; }
+  .case_study .challenge ol {
+    padding: 0;
+    margin: 0; }
+  .case_study .challenge li {
+    width: 60%;
+    color: #000;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em; }
+.case_study .concepting {
+  margin-top: 30px;
+  margin: 0 auto; }
+  .case_study .concepting ul {
+    padding: 0;
+    list-style-type: none; }
     .case_study .concepting ul li img {
       width: 100%; }
+.case_study .slide_wrapper {
+  background: #EEE;
+  border: #AAA solid 2px;
+  margin: 0 auto; }
+.case_study .controls {
+  text-align: center; }
+.case_study .prev {
+  float: left; }
+.case_study .next {
+  float: right; }
+.case_study .wireframes, .case_study .thumbnails, .case_study .mockups {
+  width: 80%;
+  height: 200px;
+  margin: 10px auto;
+  overflow: hidden;
+  border-bottom: 3px solid #000; }
+  .case_study .wireframes p, .case_study .thumbnails p, .case_study .mockups p {
+    text-align: center; }
+  .case_study .wireframes ul, .case_study .thumbnails ul, .case_study .mockups ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative; }
+    .case_study .wireframes ul li, .case_study .thumbnails ul li, .case_study .mockups ul li {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background: #EEE;
+      display: block;
+      opacity: 0;
+      transition: .5s ease; }
+    .case_study .wireframes ul .active, .case_study .thumbnails ul .active, .case_study .mockups ul .active {
+      z-index: 10;
+      opacity: 1;
+      transition: .5s ease;
+      position: relative; }
+    .case_study .wireframes ul .last-active, .case_study .thumbnails ul .last-active, .case_study .mockups ul .last-active {
+      z-index: 9;
+      opacity: 0;
+      transition: .5s ease; }
+.case_study .details {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 30px 0; }
+  .case_study .details a {
+    display: block;
+    margin-top: 70px;
+    width: 15%; }
+    .case_study .details a img {
+      width: 80%; }
+  .case_study .details h3 {
+    position: absolute;
+    background: #7A9BB7;
+    padding: 10px;
+    top: 0;
+    width: 20%;
+    margin: 0 40%;
+    color: #FFF;
+    border-radius: 4px;
+    text-align: center;
+    opacity: 0; }
+  .case_study .details p {
+    background: #EEE;
+    width: 100%;
+    margin: 50px auto;
+    opacity: 0;
+    display: none;
+    float: left; }
+  .case_study .details .active {
+    z-index: 10;
+    opacity: 1;
+    display: block;
+    transition: .5s ease; }
+  .case_study .details .last-active {
+    z-index: 9;
+    opacity: 0;
+    transition: .5s ease; }
+.case_study .writeups {
+  position: relative;
+  float: left;
+  width: 70%;
+  display: block;
+  padding-top: 20px; }
+.case_study .markup {
+  margin: 0 auto; }
+  .case_study .markup img {
+    width: 100%; }
+.case_study .finished {
+  margin: 40px auto;
+  text-align: center; }
+.case_study .challenge, .case_study .concepting, .case_study .markup, .case_study .finished {
+  width: 90%; }
 
 /* Footer */
 footer {
@@ -210,23 +322,70 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px; }
+  height: 40px;
+  line-height: 40px;
+  z-index: 10; }
   footer p {
     font-family: 'Cardo', serif;
     font-weight: 400;
     font-size: 1.2em;
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
 
 @media screen and (min-width: 700px) {
-  header ul li {
+  header ul {
+    border-top: thick solid #AAA;
+    border-bottom: thick solid #AAA;
+    display: flex; }
+    header ul li {
+      width: 30%;
+      display: inline-block;
+      flex: 1; }
+      header ul li a {
+        background: none;
+        color: #000;
+        margin: auto;
+        border: none; }
+
+  main {
+    width: 90%; }
+
+  .intro_wrapper {
+    width: 70%; }
+
+  .case_study .concepting {
+    width: 90%; }
+  .case_study .wireframes, .case_study .thumbnails, .case_study .mockups {
     width: 30%;
-    display: inline-block;
-    flex: 1; }
+    margin: 0 1.5%;
+    flex: 1;
+    border-bottom: none;
+    height: auto; }
+  .case_study .details a {
+    width: 15%; }
+  .case_study .writeups {
+    width: 70%; }
+
+  .slideshow {
+    display: flex; }
 
   .frontend .project {
     float: left;
     width: 45%;
     margin: 0 2.5%;
-    height: 550px; } }
+    padding: 40px 0; }
+
+  footer {
+    height: 60px;
+    line-height: 60px; } }
+@media screen and (min-width: 1000px) {
+  .case_study .concepting {
+    width: 60%; }
+  .case_study .details a {
+    width: 15%; }
+  .case_study .writeups {
+    width: 70%; }
+  .case_study .challenge, .case_study .concepting, .case_study .markup, .case_study .finished {
+    width: 70%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width" />
 
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,700|Cardo' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" type="text/css" href="node_modules/lightbox2/dist/css/lightbox.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<title>Will McCain - Design</title>
@@ -42,24 +44,21 @@
 		</article>
 
 		<div class="project">
-			<ul class="slideshow">
-				<li><a href="img/sidewalkslam_clip.jpg"><img src="img/sidewalkslam_clip.jpg" /></a></li>
-				<li></li>
-			</ul>
+		
+			<a class="projectpic" href="img/sidewalkslam_clip.jpg" data-lightbox="sws-1" data-title="The Marvel BattleApp"><img src="img/sidewalkslam_clip.jpg" /></a>
 			
 			<h2>Marvel BattleApp</h2>
-			<a href="appcasestudy.html">Case Study</a>
+			<a class="sitelink" href="appcasestudy.html">Case Study</a>
 			<p>As part of the Iron Yard, I was one of two designers paired up with developers to make a web app using Marvel's API of character data. The user would be able to select any hero or villian, see their stats and description, and then pit them in battle against any other character. Design-wise, we went with flat, vibrant colors and powerful, energetic fonts reminiscent of comic books.</p>
 			
 		</div>
 
 		<div class="project">
-			<ul class="slideshow">
-				<li><a href="img/cff_clip.jpg"><img src="img/cff_clip.jpg" /></a></li>
-			</ul>
+			
+			<a class="projectpic" href="img/cff_clip.jpg" data-lightbox="cff-1" data-title="Center for Fathers and Families"><img src="img/cff_clip.jpg" /></a></li>
 
 			<h2>Center for Fathers and Families</h2>
-			<a href="http://mccainwill.github.io/cff/">Github Site</a>
+			<a class="sitelink" href="http://mccainwill.github.io/cff/">Github Site</a>
 			<p>Another Iron Yard project, this was a redesign of an old version of the Center's website. Since its aim is to help struggling fathers with the information and support they need, I decided on soft, comfortable colors and structured the content to better find resources.</p>
 			
 		</div>
@@ -75,6 +74,8 @@
 
 </div>
 
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

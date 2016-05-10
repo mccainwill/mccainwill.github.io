@@ -1,5 +1,33 @@
 @media screen and (min-width: 1000px){
 
-	
+	.case_study{
+
+		.concepting{
+			width: 60%;
+		}
+
+		.wireframes, .thumbnails, .mockups{
+
+			ul{
+				// height: 450px;
+			}
+		}
+
+		.details{
+
+			a{
+				width: 15%;
+			}
+		}
+
+		.writeups{
+			width: 70%;
+		}
+
+		.challenge, .concepting, .markup, .finished{
+			width: 70%;
+		}
+
+	}
 
 }
