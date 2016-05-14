@@ -139,6 +139,10 @@ main{
 		font-family: "Josefin Sans", sans-serif;
 		font-weight: 400;
 	}
+
+	img{
+		width: 30%;
+	}
 }
 
 .intro_wrapper{
@@ -146,6 +150,26 @@ main{
 	width: 90%;
 	padding: 5px;
 	margin: 20px auto;
+	box-sizing: border-box;
+
+	
+
+}
+
+.intro_main{
+	// background-image: url(../img/kiltandvest.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	// img{
+	// 	float: left;
+	// 	width: 50%;
+	// }
+
+	// h1{
+	// 	float: left;
+	// 	width: 50%;
+	// }
 }
 
 /* Portfolio */

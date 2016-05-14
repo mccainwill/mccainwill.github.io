@@ -28,7 +28,27 @@
 	}
 
 	.intro_wrapper{
-		width: 70%;
+		// width: 70%;
+	}
+
+	.intro_subsections{
+
+		width: 90%;
+		margin: 0 auto;
+
+		article{
+			width: 45%;
+		}
+
+		.intro_design{
+			margin-right: 5%;
+			float: left;
+		}
+
+		.intro_frontend{
+			margin-left: 5%;
+			float: right;
+		}
 	}
 
 	.case_study{

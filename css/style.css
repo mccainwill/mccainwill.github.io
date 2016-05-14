@@ -102,12 +102,19 @@ main {
     font-size: 1.2em;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400; }
+  .intro img {
+    width: 30%; }
 
 .intro_wrapper {
   background-image: url(../img/sayagata.png);
   width: 90%;
   padding: 5px;
-  margin: 20px auto; }
+  margin: 20px auto;
+  box-sizing: border-box; }
+
+.intro_main {
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 /* Portfolio */
 .portfolio_select .project {
@@ -350,8 +357,17 @@ footer {
   main {
     width: 90%; }
 
-  .intro_wrapper {
-    width: 70%; }
+  .intro_subsections {
+    width: 90%;
+    margin: 0 auto; }
+    .intro_subsections article {
+      width: 45%; }
+    .intro_subsections .intro_design {
+      margin-right: 5%;
+      float: left; }
+    .intro_subsections .intro_frontend {
+      margin-left: 5%;
+      float: right; }
 
   .case_study .concepting {
     width: 90%; }
