@@ -16,9 +16,9 @@
 
 <header>
 
-	<h1>Will McCain</h1>
+	<img src="img/wmlogo.png" />
 	<hr/>
-	<h2>Web. Design. Development.</h2>
+	<h2>Will McCain</h2>
 
 	<nav>
 		<ul>
@@ -66,16 +66,16 @@
 		
 			<h2>Concepting & Design</h2>
 
-			<p>It would be an app about superheroes, so the design didn't just embrace that, it REVELED in it. Bright, flat colors. Bold text. Large images to capture the eye. The last thing it would be was boring.</p>
+			<p>For a web app about superheroes, the design didn't just need to embrace the comic book aesthetic, it needed to REVEL in it.</p>
+
+			<p>Bright, flat colors. Bold text. Large images to capture the eye. The last thing we would let it be was boring.</p>
 
 			<div class="slide_wrapper clearfix">
-
-				
 
 				<div class="slideshow clearfix">
 					<div class="wireframes">
 						<p>Wireframes</p>
-						<ul class="one">
+						<ul>
 							<li class="active"><a href="img/BattleApp_Main.jpg" data-lightbox="wireframes" data-title="Main page wireframe"><img src="img/BattleApp_Main.jpg"></a></li>
 							<li><a href="img/BattleApp_Search.jpg" data-lightbox="wireframes" data-title="Search page wireframe"><img src="img/BattleApp_Search.jpg"></a></li>
 							<li><a href="img/BattleApp_Bio.jpg" data-lightbox="wireframes" data-title="Bio page wireframe"><img src="img/BattleApp_Bio.jpg"></a></li>
@@ -87,7 +87,7 @@
 
 					<div class="thumbnails">
 						<p>Thumbnails</p>
-						<ul class="one">
+						<ul>
 							<li class="active"><a href="img/thumbnail_main.jpg" data-lightbox="thumbnails" data-title="Main page design sketch"><img src="img/thumbnail_main.jpg"></a></li>
 							<li><a href="img/thumbnail_search.jpg" data-lightbox="thumbnails" data-title="Search page sketch"><img src="img/thumbnail_search.jpg"></a></li>
 							<li><a href="img/thumbnail_bio.jpg" data-lightbox="thumbnails" data-title="Bio page sketch"><img src="img/thumbnail_bio.jpg"></a></li>
@@ -99,7 +99,7 @@
 
 					<div class="mockups">
 						<p>Mockups</p>
-						<ul class="one">
+						<ul>
 							<li class="active"><a href="img/sidewalkslam_main.jpg" data-lightbox="mockups"><img src="img/sidewalkslam_main.jpg"></a></li>
 							<li><a href="img/sidewalkslam_character.jpg" data-lightbox="mockups"><img src="img/sidewalkslam_character.jpg"></a></li>
 							<li><a href="img/sidewalkslam_bio.jpg" data-lightbox="mockups"><img src="img/sidewalkslam_bio.jpg"></a></li>
@@ -122,12 +122,12 @@
 
 					<div class="writeups">
 
-						<p class="active">The landing page had to make an impact, so we chose a big picture with in-your-face text. Initially we have calls to action over the image, but since they were mirrored in the buttons at the top, we went for a more intense welcome screen.</p>
-						<p>This page would be the central way of finding heroes, with the most frequently chosen characters as suggestions. It would also be the portal for viewing profiles.</p>
-						<p>The full API would be leveraged here for character picture, abilities, and a personal history. We remembered the old collectible cards in foil packs from the 90s and decided that would be a great way to present it. Plus, it would mesh well with our overall design.</p>
-						<p>Some users would want to go straight to the fight, and this is where they set it up. By clicking on an empty portrait, they could search for a character and add them. The areas for selecting characters was given the same excited style as the rest of the site, but also made to be reminiscent of fighting video games.</p>
-						<p>Finally! The fight is on! One of two types of fights, actually. The Stat Fight option runs a quick series of fights and records the victor. For those more interested in how a favorite hero might stand up  if they had enough chances. Visually, this and the next page are the central pieces of the app, so the background stretches to the full side of the screen to set it apart. The shadows beneath each character provided a hint of dimensionality, and there is very little on the page to distract from the main event.</p>
-						<p>Now this is probably what you had in mind! A single turn by turn battle with one victor and one chump. Each attack (or miss!) appears at the top of the message window so the user can keep their focus on the characters. </p>
+						<p class="active">The landing page had to make an impact, so we chose a big picture with in-your-face text. Initially we had calls to action over the image, but since they were mirrored in the buttons at the top, we thought it was a bit redundant.</p>
+						<p>This page would be the central way of finding heroes, with the most frequently chosen characters as suggestions. It would also be the portal for viewing profiles, which you'll see next.</p>
+						<p>The full API would be leveraged here for character picture, abilities, and personal history. Initally we wanted to use some data visualization through D3 for the stats. Then, we remembered the old collectible cards in foil packs from the 90s and decided that kind of look would be a great way to present each character. Plus, it would mesh well with our overall design.</p>
+						<p>Some users would want to go straight to the fight, and this is where they set it up. The overall thought here was the selection screen for fighting video games. By clicking on an empty portrait, they could search for a character and add them. Even though they were placeholder images for the character portraits, they still needed the same energy as the rest of the site.</p>
+						<p>Finally! The fight is on! One of two types of fights, actually. The Stat Fight option runs a quick series of fights with the battle logic and records the victor. For those more interested in how a favorite hero might stand up if they had enough chances against a particular foe. Visually, this and the next page are the central pieces of the app, so the background stretches to the full width of the screen to set it apart. The shadows beneath each character provided a hint of dimensionality, and there is very little on the page to distract from the main event.</p>
+						<p>Now this is probably what you had in mind! A single turn by turn battle with one victor and one chump. Each attack (or miss!) appears at the top of the message window so the user can keep their focus on the characters and scroll through after the fact.</p>
 
 					</div>
 
@@ -144,10 +144,16 @@
 
 			<h2>Markup</h2>
 
-			<p>The meat and potatoes of code to our spices of design. There was a lot of back and forth during this process. We designers built out templates for each page with HTML5 and CSS3 using SASS. The developers took those and fit them into their frameworks. Naturally, some things didn't work quite the same as we had built them, so we had to rework them around the app setup. Not too difficult, a little tedious, and immensely educational.</p>
-
-			<a href="img/battleapp.jpg" data-lightbox="Battleappcode" data-title="Site files in Sublime Text"><img src="img/battleapp.jpg" alt="BattleApp code windows"></a>
+			<p>The meat and potatoes of code to the spice of design. We designers built out templates for each page with HTML5 and CSS3 using SASS. The developers took those and fit them into their frameworks.</p>
 			
+			<p>There was a lot of back and forth during this process. Naturally, some things didn't work quite the same as we had built them, so we had to rework them around how the frameworks split each page into sections that were loaded separately. Not too difficult, a little tedious, and immensely educational.</p>
+
+			<ul>
+				<li><a href="img/sublime1.jpg" data-lightbox="Battleappcode" data-title="Site files in Sublime Text"><img src="img/sublime1.jpg" alt="BattleApp code windows"></a></li>
+				<li><a href="img/sublime2.jpg" data-lightbox="Battleappcode" data-title="Site files in Sublime Text"><img src="img/sublime2.jpg" alt="BattleApp code windows"></a></li>
+				<li><a href="img/sublime2.jpg" data-lightbox="Battleappcode" data-title="Site files in Sublime Text"><img src="img/sublime2.jpg" alt="BattleApp code windows"></a></li>
+			</ul>
+		
 		</section>
 
 		<section class="finished">

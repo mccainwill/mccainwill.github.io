@@ -8,10 +8,15 @@ body{
 	margin:0;
 	position: relative; 
 	line-height: 1.6em;
+	background: linear-gradient(#CFD2E6, #FFF);
+	background-repeat: no-repeat;
+	background-size: 100% 200px;
 }
 
 .wrapper{
-
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
 }
 
 /* Header Styles */
@@ -21,9 +26,14 @@ header{
 	padding: 20px 0 0 0;
 	// width: 90%;
 	margin: 0 auto;
-	background: linear-gradient(#CFD2E6, #FFF);
+	
 	// background-image: url(../img/concrete.png);
 	// background-repeat: repeat-x;
+
+	img{
+		display: block;
+		margin: 0 auto;
+	}
 
 	h1{
 		font-family: 'Cardo', serif;
@@ -50,7 +60,7 @@ header{
 		padding:0;
 		margin:0 auto;
 		text-align: center;
-		width: 90%;
+		// width: 90%;
 		font-family:'Josefin Sans', sans-serif;
 		font-weight: 400;
 		// border-top: thick solid #AAA;
@@ -147,16 +157,13 @@ main{
 
 .intro_wrapper{
 	background-image: url(../img/sayagata.png);
-	width: 90%;
+	// width: 90%;
 	padding: 5px;
 	margin: 20px auto;
 	box-sizing: border-box;
-
-	
-
 }
 
-.intro_main{
+.intro_about{
 	// background-image: url(../img/kiltandvest.png);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -176,35 +183,9 @@ main{
 
 .portfolio_select{
 
-	// .intro{
-	// 	font-family: 'Cardo', serif;
-	// 	font-weight: 400;
-	// 	text-align: center;
-	// 	width: 60%;
-	// 	margin: 30px auto;
-	// 	padding: 10px;
-	// 	display: block;
-	// 	background: url(../img/sayagata.png);
-	// 	border: 1px solid #DDD;
-
-	// 	h1{
-	// 		text-align: center;
-	// 		font-size: 3em;
-	// 		margin: 10px;
-	// 	}
-
-	// 	p{
-	// 		width:80%;
-	// 		margin: 0 auto;
-	// 		font-size: 1.2em;
-	// 	}
-	// }
-
 	.project{
     	text-align: center;
-    	width: 45%;
-    	float: left;
-    	margin: 0 2.5%;
+    	margin: 0 5%;
     	padding-bottom: 20px;
 
     	h2{
@@ -215,13 +196,15 @@ main{
     	ul{
     		list-style-type: none;
     		padding:0;
+    		margin: 30px auto;
+    		display: block;
     	}
 
     	li{
-    		width:100%;
+    		// width:100%;
+    		display: inline-block;
 
     		img{
-    			// width: 50%;
     			height: 200px;
     		}
     	}
@@ -232,7 +215,7 @@ main{
     		font-size: 1.2em;
     	}
 
-    	.projectpic img{
+    	.projectpic{
     		height: 200px;
     	}
 	}
@@ -301,14 +284,17 @@ main{
     width: 60%;
     margin: 30px auto;
     border-radius: 8px;
-    padding: 5px;
+    padding: 5px;   
+}
+
+.list{
+    margin: 0 auto;
+    width: 40px;
 }
 
 /* Case Study */
 
 .case_study{
-
-	section{
 
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 400;
@@ -318,16 +304,17 @@ main{
 			// background: linear-gradient(#FFF, #EEE, #FFF);
 		}
 
+		h1{
+			color: red;
+		}
+
 		h2{
 			font-family: 'Cardo', serif;
-			font-weight: 400;
-			text-align: center;
-		    font-size: 2em;
+			font-weight: 600;
+		    font-size: 1.6em;
 		    color: #000;
-		    padding: 10px;
-		    text-shadow: 1px 1px 1px #888686;
-		    width: 60%;
-		    margin: 0 auto;
+		    // padding: 10px;
+		    // width: 60%;
 		}
 
 		p{
@@ -338,13 +325,13 @@ main{
 		}	
 
 		hr{
-			margin: 30px 0;
+			// margin: 30px 0;
 		}
-	}
+	
 
 	.challenge{
 		// width: 70%;
-		margin: 0 auto;
+		margin: 50px auto 0 auto;
 
 		ol{
 			padding:0;
@@ -354,9 +341,9 @@ main{
 		li{
 			// text-align: center;
 		    // background: #7A9BB7;
-		    width: 60%;
+		    // width: 60%;
 		    color: #000;
-		    margin: 10px auto;
+		    margin-left: 50px;
 		    padding: 10px;
 		    // text-shadow: 1px 1px 1px #000;
 		    border-radius: 5px;
@@ -388,8 +375,8 @@ main{
 	.slide_wrapper{
 		// background: linear-gradient(#FFF, #EEE, #FFF);
 		background: #EEE;
-		border: #AAA solid 2px;
-		margin: 0 auto;
+		// border: #AAA solid 2px;
+		margin-bottom: 30px;
 	}
 
 	.controls{
@@ -406,10 +393,10 @@ main{
 
 	.wireframes, .thumbnails, .mockups{
 		width: 80%;
-    	height: 200px;
+    	// height: 200px;
     	margin: 10px auto;
     	overflow: hidden;
-    	border-bottom: 3px solid #000;
+    	border-bottom: 3px solid #444;
 	
     	p{
     		text-align: center;
@@ -435,6 +422,18 @@ main{
     			// width: 16.6%;
     			opacity: 0;
     			transition: .5s ease;
+
+    			a{
+    				display: block;
+    				height: 200px;
+    				border-bottom: 2px solid #444;
+    				overflow: hidden;
+
+    				&:hover{
+    					height: 196px;
+    					border-bottom: 6px solid #444;
+    				}
+    			}
     		}
 
     		.active{
@@ -470,12 +469,13 @@ main{
 
 		h3{
 			position: absolute;
-    		background: #7A9BB7;
+			font-size: 1.4em;
+    		// background: #7A9BB7;
     		padding: 10px;
     		top: 0;
     		width: 20%;
     		margin: 0 40%;
-    		color: #FFF;
+    		// color: #FFF;
     		border-radius: 4px;
     		text-align: center;
     		opacity: 0;
@@ -518,6 +518,23 @@ main{
 		// width: 70%;
 		margin: 0 auto;
 
+		ul{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		
+			li{
+				width: 30%;
+				display: inline-block;
+
+				&:nth-child(2){
+					margin-left: 1.5%;
+					margin-right: 1.5%;
+				}
+			}
+		}
+
 		img{
 			width: 100%;
 		}
@@ -530,7 +547,7 @@ main{
 	}
 
 	.challenge, .concepting, .markup, .finished{
-		width: 90%;
+		// width: 90%;
 	}
 
 }

@@ -9,7 +9,11 @@ $(document).ready(function(){
 	var index = 0;
 
 	var wireframes = $('.wireframes ul');
-	var mockups = $('.mockups ul')
+	var mockups = $('.mockups ul');
+
+	var activePic = $('.active');
+
+	
 
 	prevButton.on('click', function(e){
 
@@ -26,12 +30,6 @@ $(document).ready(function(){
 
 			index--;
 
-		// prevImg.css({opacity: 0.0})
-  //       .addClass('active')
-  //       .animate({opacity: 1.0}, 1000, function() {
-  //           active.removeClass('active last-active');
-  //       });
-
     	}
 
     	e.preventDefault();
@@ -43,7 +41,6 @@ $(document).ready(function(){
 		var active = $('.active');
 		var next = active.next();
 
-		// active.addClass('last-active');
 
 		if(index < 5){
 
@@ -53,33 +50,10 @@ $(document).ready(function(){
 
 			index++;
 
-		// next.css({opacity: 0.0})
-  //       .addClass('active')
-  //       .animate({opacity: 1.0}, 1000, function() {
-  //           active.removeClass('active last-active');
-  //       });
-
     	}
 
     	e.preventDefault();
 
 	});
-
-		 // if( index < 5 ){
-   //          //remove the current class on the parent
-   //          //div
-   //          wireframes.removeClass( classes[ index ] );
-   //          mockups.removeClass( classes [ index ] );
-          
-
-   //          //otherwise, move to the next index and
-   //          index++;
-            
-   //          //add that class to the parent div
-   //          wireframes.addClass( classes[ index ] );
-   //          mockups.addClass( classes [ index ] );
-   //      }
-
-        // e.preventDefault();
 
 });

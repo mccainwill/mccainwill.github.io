@@ -24,7 +24,7 @@
 	}
 
 	main{
-		width: 90%;
+		// width: 90%;
 	}
 
 	.intro_wrapper{
@@ -33,7 +33,7 @@
 
 	.intro_subsections{
 
-		width: 90%;
+		// width: 90%;
 		margin: 0 auto;
 
 		article{
@@ -51,24 +51,33 @@
 		}
 	}
 
+	.portfolio_select{
+
+		.project{
+			width: 40%;
+    		float: left;
+		}
+	}
+
 	.case_study{
 
 		.concepting{
-			width: 90%;
+			// width: 90%;
 		}
 
 		.wireframes, .thumbnails, .mockups{
 			width: 30%;
 			margin: 0 1.5%;
 			flex:1;
-			border-bottom: none;
-			height: auto;
+			// border-bottom: none;
+			// height: auto;
 		}
 
 		.details{
 
 			a{
 				width: 15%;
+				max-width: 150px;
 			}
 		}
 
@@ -92,9 +101,6 @@
 		}
 	}
 
-	footer{
-		height: 60px;
-		line-height: 60px;
-	}
+
 
 }
