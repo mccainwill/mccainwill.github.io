@@ -1,15 +1,20 @@
 @media screen and (min-width: 1000px){
 
+	.intro{
+
+		h2{
+			font-size: 2em;
+		}
+	}
+
 	.case_study{
 
 		.concepting{
-			// width: 60%;
 		}
 
 		.wireframes, .thumbnails, .mockups{
 
 			ul{
-				// height: 450px;
 			}
 		}
 
@@ -25,9 +30,46 @@
 		}
 
 		.challenge, .concepting, .markup, .finished{
-			// width: 70%;
 		}
 
+	}
+
+	.sitelink{
+		font-size: 1.4em;
+	}
+
+	.list{
+		width: 40px;
+	}
+
+	.portfolio_select{
+
+		.project{
+
+			h2{
+				font-size: 1.4em;
+				height: auto;
+			}
+
+			p{
+				font-size: 1.2em;
+			}
+		}
+	}
+
+	.frontend{
+
+		.project{
+
+			h2{
+				font-size: 1.4em;
+			}
+
+			p{
+				height: auto;
+				font-size: 1.2em;
+			}
+		}
 	}
 
 }
