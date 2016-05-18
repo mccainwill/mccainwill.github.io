@@ -33,6 +33,7 @@ header{
 	img{
 		display: block;
 		margin: 0 auto;
+		width: 250px;
 	}
 
 	h1{
@@ -151,7 +152,7 @@ main{
 	}
 
 	img{
-		width: 30%;
+		width: 25%;
 	}
 }
 
@@ -195,7 +196,7 @@ main{
 
     	ul{
     		list-style-type: none;
-    		padding:0;
+    		// padding:0;
     		margin: 30px auto;
     		display: block;
     	}
@@ -268,8 +269,6 @@ main{
 				margin-bottom: 5px;
 			}
 		}
-
-		
 	}
 }
 
@@ -278,18 +277,35 @@ main{
     text-decoration: none;
     font-weight: 600;
     display: block;
-    // background: #767FB7;
     background: #7A9BB7;
     color: #FFF;
     width: 60%;
     margin: 30px auto;
     border-radius: 8px;
     padding: 5px;   
+    transition: .3s ease;
+
+    &:hover{
+    	width: 70%;
+    	border-left: 4px solid #3A4B58;
+    	border-right: 4px solid #3A4B58;
+    	transition: .3s ease;
+    	color: #000;
+    }
 }
 
 .list{
-    margin: 0 auto;
+    display: block;
+    // margin: 0 10px;
     width: 40px;
+    color:#FFF;
+    text-decoration: none;
+
+    &:hover{
+    	
+    	transition: .3s ease;
+    	color: #000;
+    }
 }
 
 /* Case Study */

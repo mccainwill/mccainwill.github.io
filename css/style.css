@@ -32,7 +32,8 @@ header {
   margin: 0 auto; }
   header img {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 250px; }
   header h1 {
     font-family: 'Cardo', serif;
     font-weight: 400;
@@ -112,7 +113,7 @@ main {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 400; }
   .intro img {
-    width: 30%; }
+    width: 25%; }
 
 .intro_wrapper {
   background-image: url(../img/sayagata.png);
@@ -134,7 +135,6 @@ main {
     font-weight: 400; }
   .portfolio_select .project ul {
     list-style-type: none;
-    padding: 0;
     margin: 30px auto;
     display: block; }
   .portfolio_select .project li {
@@ -189,11 +189,23 @@ main {
   width: 60%;
   margin: 30px auto;
   border-radius: 8px;
-  padding: 5px; }
+  padding: 5px;
+  transition: .3s ease; }
+  .sitelink:hover {
+    width: 70%;
+    border-left: 4px solid #3A4B58;
+    border-right: 4px solid #3A4B58;
+    transition: .3s ease;
+    color: #000; }
 
 .list {
-  margin: 0 auto;
-  width: 40px; }
+  display: block;
+  width: 40px;
+  color: #FFF;
+  text-decoration: none; }
+  .list:hover {
+    transition: .3s ease;
+    color: #000; }
 
 /* Case Study */
 .case_study {
