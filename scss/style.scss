@@ -24,11 +24,7 @@ body{
 header{
 
 	padding: 20px 0 0 0;
-	// width: 90%;
 	margin: 0 auto;
-	
-	// background-image: url(../img/concrete.png);
-	// background-repeat: repeat-x;
 
 	img{
 		display: block;
@@ -61,13 +57,9 @@ header{
 		padding:0;
 		margin:0 auto;
 		text-align: center;
-		// width: 90%;
 		font-family:'Josefin Sans', sans-serif;
 		font-weight: 400;
-		// border-top: thick solid #AAA;
-		// border-bottom:thick solid #AAA;
     	border-radius: 5px;
-		// display: flex;
 
 		li{
 			text-align: center;
@@ -90,28 +82,24 @@ header{
 }
 
 a.about:hover{
-	// background: linear-gradient(#AAA, #B38585, #AAA);
 	background: #AAA;
 	color: #FFF;
 	transition: .4s ease;
 }
 
 a.design:hover{
-	// background: linear-gradient(#AAA, #8585B3, #AAA);
 	background: #AAA;
 	color: #FFF;
 	transition: .4s ease;
 }
 
 a.frontend:hover{
-	// background: linear-gradient(#AAA, #85B390, #AAA);
 	background: #AAA;
 	color: #FFF;
 	transition: .4s ease;
 }
 
 main{
-	// width:90%;
 	margin: 0 auto;
 	padding-bottom: 103px;
 }
@@ -123,12 +111,9 @@ main{
 	font-family: 'Cardo', serif;
 	font-weight: 400;
 	text-align: center;
-	// width: 60%;
-	// margin: 30px auto;
 	margin: 2.5%;
 	padding: 10px;
 	display: block;
-	// background-image: url(../img/sayagata.png);
 	background: #FFF;
 	border: 1px solid #DDD;
 
@@ -158,26 +143,14 @@ main{
 
 .intro_wrapper{
 	background-image: url(../img/sayagata.png);
-	// width: 90%;
 	padding: 5px;
 	margin: 20px auto;
 	box-sizing: border-box;
 }
 
 .intro_about{
-	// background-image: url(../img/kiltandvest.png);
 	background-repeat: no-repeat;
 	background-position: center center;
-	
-	// img{
-	// 	float: left;
-	// 	width: 50%;
-	// }
-
-	// h1{
-	// 	float: left;
-	// 	width: 50%;
-	// }
 }
 
 /* Portfolio */
@@ -202,7 +175,6 @@ main{
     	}
 
     	li{
-    		// width:100%;
     		display: inline-block;
 
     		img{
@@ -247,9 +219,7 @@ main{
 
 
 		img{
-			// width: 70%;
 			height: 250px;
-			// padding: 20px 40px;
 			background: #D6D0D0;
 			width: 100%;
 			max-width: 300px;
@@ -296,7 +266,6 @@ main{
 
 .list{
     display: block;
-    // margin: 0 10px;
     width: 40px;
     color:#FFF;
     text-decoration: none;
@@ -329,14 +298,10 @@ main{
 			font-weight: 600;
 		    font-size: 1.6em;
 		    color: #000;
-		    // padding: 10px;
-		    // width: 60%;
 		}
 
 		p{
 			font-size: 1.2em;
-		    // text-align: center;
-		    // width: 70%;
 		    margin: 20px auto;
 		}	
 
@@ -346,7 +311,6 @@ main{
 	
 
 	.challenge{
-		// width: 70%;
 		margin: 50px auto 0 auto;
 
 		ol{
@@ -355,13 +319,9 @@ main{
 		}
 
 		li{
-			// text-align: center;
-		    // background: #7A9BB7;
-		    // width: 60%;
 		    color: #000;
 		    margin-left: 50px;
 		    padding: 10px;
-		    // text-shadow: 1px 1px 1px #000;
 		    border-radius: 5px;
 		    font-family: 'Josefin Sans', sans-serif;
 		    font-weight: 600;
@@ -371,7 +331,6 @@ main{
 
 	.concepting{
 		margin-top:30px;
-		// width: 70%;
 		margin: 0 auto;
 
 		ul{
@@ -379,7 +338,6 @@ main{
 			list-style-type: none;
 
 			li{
-				// width:200px;
 
 				img{
 					width: 100%;
@@ -389,9 +347,7 @@ main{
 	}
 
 	.slide_wrapper{
-		// background: linear-gradient(#FFF, #EEE, #FFF);
 		background: #EEE;
-		// border: #AAA solid 2px;
 		margin-bottom: 30px;
 	}
 
@@ -409,7 +365,6 @@ main{
 
 	.wireframes, .thumbnails, .mockups{
 		width: 80%;
-    	// height: 200px;
     	margin: 10px auto;
     	overflow: hidden;
     	border-bottom: 3px solid #444;
@@ -423,8 +378,6 @@ main{
     		margin: 0;
     		list-style-type: none;
     		position: relative;
-    		// width: 600%;
-    		// height: 360px;
     	
     		li{
     			position: absolute;
@@ -432,10 +385,7 @@ main{
     			top: 0;
     			height: 100%;
     			background: #EEE;
-    			// z-index: 8;
     			display: block;
-    			// float: left;
-    			// width: 16.6%;
     			opacity: 0;
     			transition: .5s ease;
 
@@ -486,23 +436,19 @@ main{
 		h3{
 			position: absolute;
 			font-size: 1.4em;
-    		// background: #7A9BB7;
     		padding: 10px;
     		top: 0;
     		width: 20%;
     		margin: 0 40%;
-    		// color: #FFF;
     		border-radius: 4px;
     		text-align: center;
     		opacity: 0;
     	}
 
     	p{
-    		// position: absolute;
     		background: #EEE;
     		width: 100%;
     		margin: 50px auto;
-    		// height: 55px;
     		opacity: 0;
     		display: none;
     		float: left;
@@ -531,7 +477,6 @@ main{
 	}
 
 	.markup{
-		// width: 70%;
 		margin: 0 auto;
 
 		ul{
@@ -557,7 +502,6 @@ main{
 	}
 
 	.finished{
-		// width: 70%;
 		margin: 40px auto;
 		text-align: center;
 	}
@@ -572,7 +516,6 @@ main{
 
 footer{
 	padding: 20px;
-	// background: url(../img/upfeathers.png);
 	background: #EBE5D9;
 	border-top: 3px solid #AAA;
 	position: fixed;
@@ -584,7 +527,6 @@ footer{
 	z-index: 10;
 
 	p{
-		// float:right;
 		font-family: 'Cardo', serif;
 		font-weight: 400;
 		font-size: 1.2em;
